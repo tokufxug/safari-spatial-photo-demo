@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spatial Photos</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .image-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .image-group .title {
+            font-size: 1.2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .image-pair {
+            display: flex;
+            justify-content: center;
+            gap: 20px; /* Space between images */
+        }
+        .image-pair img {
+            width: 45%; /* Adjust image width */
+            max-width: 400px; /* Set maximum width */
+        }
+    </style>
+</head>
+<body>
+    <div class="image-group">
+        <div class="title">Spatial Photo: Disabled</div>
+        <div class="image-pair">
+            <img src="spatial-photo-1.heic" alt="Spatial Photo 1">
+            <img src="spatial-photo-2.heic" alt="Spatial Photo 2">
+        </div>
+    </div>
+    <div class="image-group">
+        <div class="title">Spatial Photo: Enabled</div>
+        <div class="image-pair">
+            <img src="spatial-photo-1.heic" alt="Spatial Photo 1" controls>
+            <img src="spatial-photo-2.heic" alt="Spatial Photo 2" controls>
+        </div>
+    </div>
+</body>
+</html>
